@@ -1,6 +1,6 @@
 <template>
         <div class="row justify-content-center">
-            <center><h3>Administrateurs</h3></center><br><br>
+            <center><h3>Administrateurs et marche</h3></center><br><br>
 
             <div class="panel panel-primary">
 				<div class="panel-heading" style='margin-top:2em'>
@@ -39,6 +39,7 @@
 </template>
 
 <script>
+alert('jevois');
     export default {
 		data(){
 			return{

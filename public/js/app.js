@@ -1948,6 +1948,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+alert('jevois');
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2086,7 +2087,58 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     persist: function persist() {
+      alert('je vois bien');
+      /*if(localStorage.getItem('users_unsave')){
+      	alert('j existe');
+      	var mon_user = this.email;
+      	var tab0= [
+      		{
+      			name: this.name,
+      			prenom: this.prenom,
+      			email: this.email,
+      			telephone: this.telephone,
+      			adresse: this.adresse,
+      			code_postal: this.code_postal,
+      			ville: this.ville,
+      			commentaire: this.commentaire
+      		}
+       					
+      	];
+      	var tab1 = localStorage.getItem('users_unsave');
+      	tab1 = tab1.push({mon_user:tab0});
+      	localStorage.setItem('users_unsave',tab1);
+      	}else{
+      	alert('je n\'existe');
+      	var mon_user = this.email;
+      	var tab0= [
+      		{
+      			name: this.name,
+      			prenom: this.prenom,
+      			email: this.email,
+      			telephone: this.telephone,
+      			adresse: this.adresse,
+      			code_postal: this.code_postal,
+      			ville: this.ville,
+      			commentaire: this.commentaire
+      		}
+       					
+      	];
+      	var tab1= [
+      		{
+      			mon_user: tab0
+      		}
+      	];
+      	localStorage.setItem('users_unsave',tab1);
+      }*/
+
       alert('sauvegarde effectuée');
+      /*var t = localStorage.getItem('users_unsave');
+      for(var i in t){
+      	for(var j in t[i]){
+      		alert(t[i][j]);
+      	}
+      }*/
+
       localStorage.setItem('name', this.name);
       localStorage.setItem('prenom', this.prenom);
       localStorage.setItem('email', this.email);
@@ -2094,8 +2146,7 @@ __webpack_require__.r(__webpack_exports__);
       localStorage.setItem('adresse', this.adresse);
       localStorage.setItem('code_postal', this.code_postal);
       localStorage.setItem('ville', this.ville);
-      localStorage.setItem('commentaire', this.commentaire);
-      console.log('maintenant prétendre que j\'ai fait plus de choses...');
+      localStorage.setItem('commentaire', this.commentaire); //console.log('maintenant prétendre que j\'ai fait plus de choses...');
     }
   }
 });
@@ -37758,7 +37809,7 @@ var render = function() {
     "div",
     { staticClass: "row justify-content-center" },
     [
-      _c("center", [_c("h3", [_vm._v("Administrateurs")])]),
+      _c("center", [_c("h3", [_vm._v("Administrateurs et marche")])]),
       _c("br"),
       _c("br"),
       _vm._v(" "),

@@ -67,7 +67,57 @@
 		},
 		methods: {
 			persist() {
+				alert('je vois bien');
+				/*if(localStorage.getItem('users_unsave')){
+					alert('j existe');
+					var mon_user = this.email;
+					var tab0= [
+						{
+							name: this.name,
+							prenom: this.prenom,
+							email: this.email,
+							telephone: this.telephone,
+							adresse: this.adresse,
+							code_postal: this.code_postal,
+							ville: this.ville,
+							commentaire: this.commentaire
+						}
+     					
+					];
+					var tab1 = localStorage.getItem('users_unsave');
+					tab1 = tab1.push({mon_user:tab0});
+					localStorage.setItem('users_unsave',tab1);
+
+				}else{
+					alert('je n\'existe');
+					var mon_user = this.email;
+					var tab0= [
+						{
+							name: this.name,
+							prenom: this.prenom,
+							email: this.email,
+							telephone: this.telephone,
+							adresse: this.adresse,
+							code_postal: this.code_postal,
+							ville: this.ville,
+							commentaire: this.commentaire
+						}
+     					
+					];
+					var tab1= [
+						{
+							mon_user: tab0
+						}
+					];
+					localStorage.setItem('users_unsave',tab1);
+				}*/
 				alert('sauvegarde effectuée');
+				/*var t = localStorage.getItem('users_unsave');
+				for(var i in t){
+					for(var j in t[i]){
+						alert(t[i][j]);
+					}
+				}*/
 				localStorage.setItem('name',this.name);
 				localStorage.setItem('prenom',this.prenom);
 				localStorage.setItem('email',this.email);
@@ -77,7 +127,7 @@
 				localStorage.setItem('ville',this.ville);
 				localStorage.setItem('commentaire',this.commentaire);
 				
-				console.log('maintenant prétendre que j\'ai fait plus de choses...');
+				//console.log('maintenant prétendre que j\'ai fait plus de choses...');
 				
 			}
 		}
